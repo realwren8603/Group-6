@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Pride, Flesh &amp; Robot | Lofi · Love and Fiction</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:Georgia,'Times New Roman',serif;background:#070912;color:#f5f7ff;line-height:1.7}a{color:inherit;text-decoration:none}
+header{position:sticky;top:0;z-index:50;backdrop-filter:blur(16px);background:rgba(7,9,18,.82);border-bottom:1px solid rgba(255,255,255,.1)}
+.nav{max-width:1180px;margin:0 auto;padding:16px 22px;display:flex;justify-content:space-between;align-items:center;gap:20px;font-family:Arial,sans-serif}.brand{display:flex;align-items:center;gap:12px;letter-spacing:.16em;text-transform:uppercase;font-size:13px;color:#d3ddff}.logo-mark{width:34px;height:34px;border-radius:14px;background:radial-gradient(circle at 44% 34%,#fff,transparent 18%),linear-gradient(135deg,#91adff,#ff9ad5);box-shadow:0 0 24px rgba(145,173,255,.55)}.nav-links{display:flex;flex-wrap:wrap;gap:16px;font-size:13px;color:#dbe4ff}.nav-links a{opacity:.82;transition:.2s}.nav-links a:hover{opacity:1;color:#fff}
+.intro{min-height:52vh;display:grid;align-items:center;max-width:1180px;margin:0 auto;padding:90px 22px 70px}.kicker{font-family:Arial,sans-serif;color:#a9c0ff;text-transform:uppercase;letter-spacing:.32em;font-size:12px;margin-bottom:18px}h1{font-size:clamp(50px,8vw,110px);line-height:.92;letter-spacing:-.07em;margin-bottom:22px}h2{font-size:clamp(34px,5vw,62px);line-height:1;letter-spacing:-.055em;margin-bottom:16px}.intro p{max-width:700px;color:#cbd6ef;font-family:Arial,sans-serif;font-size:18px}
+.quick-index{max-width:1180px;margin:0 auto;padding:0 22px 55px;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px}.index-card{min-height:150px;padding:16px;border-radius:22px;background:rgba(255,255,255,.075);border:1px solid rgba(255,255,255,.14);display:flex;flex-direction:column;justify-content:space-between;transition:.2s;font-family:Arial,sans-serif}.index-card:hover{transform:translateY(-4px);background:rgba(255,255,255,.12)}.index-card span{color:#aecaff;font-size:12px;letter-spacing:.12em;text-transform:uppercase}.index-card strong{display:block;color:#fff;font-size:16px;line-height:1.15;margin-top:8px}.index-card em{color:#c9d4ec;font-size:12px;font-style:normal;margin-top:10px}
+.story-section{position:relative;overflow:hidden;padding:84px 22px}.story-section::before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.95}.story-inner{position:relative;z-index:2;max-width:1180px;margin:0 auto;display:grid;grid-template-columns:.42fr .58fr;gap:34px;align-items:start}.cover-column{position:sticky;top:96px;display:grid;gap:18px}.cover-img{width:100%;display:block;border-radius:30px;border:1px solid rgba(255,255,255,.18);box-shadow:0 28px 80px rgba(0,0,0,.42);background:rgba(255,255,255,.08)}.story-meta{padding:24px;border-radius:26px;background:rgba(7,9,18,.64);border:1px solid rgba(255,255,255,.14);backdrop-filter:blur(12px);font-family:Arial,sans-serif}.story-number{color:#aecaff;font-size:12px;letter-spacing:.18em;text-transform:uppercase;margin-bottom:12px}.story-meta h3{font-family:Georgia,'Times New Roman',serif;font-size:32px;letter-spacing:-.04em;margin-bottom:12px}.story-meta p{color:#d4def4;font-size:14px;margin-bottom:10px}.btn{font-family:Arial,sans-serif;display:inline-flex;align-items:center;justify-content:center;padding:11px 18px;border-radius:999px;border:1px solid rgba(255,255,255,.22);background:rgba(255,255,255,.08);color:#fff;transition:.2s;font-size:14px}.btn:hover{transform:translateY(-2px)}
+.story-panel{padding:38px;border-radius:32px;background:rgba(244,241,232,.96);color:#161a23;box-shadow:0 28px 80px rgba(0,0,0,.36)}.location-ribbon{display:inline-flex;margin-bottom:18px;padding:8px 12px;border-radius:999px;background:#e6e9f3;color:#30384d;font-family:Arial,sans-serif;font-size:13px;font-weight:700}.byline{font-family:Arial,sans-serif;color:#656b7a;margin-bottom:24px}.story-panel p{font-size:18px;color:#222633;margin-bottom:18px}.tech-box{margin:24px 0 30px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.tech-card{padding:17px;border-radius:20px;background:#e6e9f3;border:1px solid #d2d7e8;font-family:Arial,sans-serif}.tech-card h4{color:#151a2a;margin-bottom:7px;font-size:15px}.tech-card p{color:#3d4558;font-size:13px;margin-bottom:0}
+.pride{background:#08111d}.pride::before{background:radial-gradient(circle at 16% 12%,rgba(237,198,122,.2),transparent 28%),radial-gradient(circle at 82% 28%,rgba(113,177,196,.2),transparent 31%),linear-gradient(180deg,#0d1d2b,#111827 48%,#070a11)}.outside{background:#071522}.outside::before{background:radial-gradient(circle at 42% 22%,rgba(140,206,255,.22),transparent 28%),radial-gradient(circle at 78% 48%,rgba(58,107,145,.22),transparent 36%),linear-gradient(180deg,#0b2134,#0d1a27 52%,#050b12)}.shadow{background:#061414}.shadow::before{background:radial-gradient(circle at 18% 18%,rgba(48,126,104,.22),transparent 31%),radial-gradient(circle at 82% 30%,rgba(95,150,160,.16),transparent 30%),linear-gradient(180deg,#0b2725,#0a1818 50%,#050808)}.fawn{background:#211309}.fawn::before{background:radial-gradient(circle at 22% 20%,rgba(255,187,86,.23),transparent 32%),radial-gradient(circle at 82% 28%,rgba(126,61,28,.22),transparent 34%),linear-gradient(180deg,#3a2111,#21140d 50%,#090604)}.man{background:#21180d}.man::before{background:radial-gradient(circle at 20% 20%,rgba(255,207,131,.24),transparent 30%),radial-gradient(circle at 70% 28%,rgba(255,170,201,.18),transparent 32%),linear-gradient(180deg,#2d2114,#1c1612 52%,#0d0a08)}
+
+    .story-figure {
+      margin: 30px 0 34px;
+      border-radius: 26px;
+      overflow: hidden;
+      background: #111827;
+      border: 1px solid rgba(17, 21, 34, 0.12);
+      box-shadow: 0 20px 48px rgba(0,0,0,0.22);
+    }
+
+    .story-figure img {
+      width: 100%;
+      display: block;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+    }
+
+    .story-figure figcaption {
+      padding: 12px 16px 14px;
+      background: rgba(255,255,255,0.72);
+      color: #4f586b;
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+footer{padding:36px 22px 54px;text-align:center;color:#8290ad;font-family:Arial,sans-serif;font-size:13px;background:#070912}
+@media(max-width:980px){.quick-index{grid-template-columns:repeat(2,minmax(0,1fr))}.story-inner{grid-template-columns:1fr}.cover-column{position:static}.cover-img{max-width:620px;margin:0 auto}}@media(max-width:640px){.nav{align-items:flex-start;flex-direction:column}.quick-index,.tech-box{grid-template-columns:1fr}.story-panel{padding:24px}.story-panel p{font-size:16px}}
+</style>
+</head>
+<body>
+<header><nav class="nav"><a href="index.html" class="brand"><span class="logo-mark"></span><span>Lofi · Love and Fiction</span></a><div class="nav-links"><a href="index.html">Home</a><a href="pride.html">Pride</a><a href="outside-eden.html">Outside Eden</a><a href="white-coated-shadow.html">White Shadow</a><a href="false-fawn.html">False Fawn</a><a href="man-no-one-knew.html">Tom & Amy</a></div></nav></header>
+<main>
+<section class="story-section pride" id="pride">
+  <div class="story-inner">
+    <aside class="cover-column">
+      <img class="cover-img" src="assets/pride-flesh-robot-cover.jpg" alt="Cover for Pride, Flesh &amp; Robot">
+      <div class="story-meta">
+        <div class="story-number">STORY 01</div>
+        <h3>Pride, Flesh &amp; Robot</h3>
+        <p><strong>Author:</strong> Avery Zheng</p>
+        <p><strong>Location:</strong> Silicon Valley, California</p>
+        <p><strong>Year:</strong> 2077</p>
+        <p><strong>Mood:</strong> cool laboratory blue with warm gold title tones.</p>
+        <a class="btn" href="index.html#map">Back to Map</a>
+      </div>
+    </aside>
+    <article class="story-panel">
+      <span class="location-ribbon">Silicon Valley, California — 2077</span>
+      <h2>Pride, Flesh &amp; Robot</h2>
+      <div class="byline">By Avery Zheng</div>
+          <div class="reader-controls">
+            <button class="read-aloud-btn" id="readStoryButton" type="button" aria-label="Read this story aloud">🔊 Read Story</button>
+            <button class="stop-aloud-btn" id="stopStoryButton" type="button" aria-label="Stop reading">⏹ Stop</button>
+          </div>
+          <div class="voice-note">Click the speaker button to listen to this story. Click again to pause or resume.</div>
+
+      
+
+      <p>Morning sunlight shone over the Institute of Artificial Intelligence and reflected off its glass surface. The building was clean, neat, and precise, just like Dr. Jones, the youngest chief scientist in the institute.</p>
+<p>When she stepped onto the fourth floor, the office changed immediately. Laughter stopped, chairs turned back to desks, and computer screens flashed with code. No one dared look up at her directly. However, someone still noticed the difference. She seemed to be walking more slowly than usual. Normally, she walked with absolute certainty. Today, her pace was almost cautious, as if she were examining the whole office.</p>
+<p>Outside her office, her assistant greeted her with a tablet in hand. &quot;Boss, you look much better today.&quot; Dr. Jones stopped. Then she smiled. It was a soft smile. &quot;Thanks to modern medicine,&quot; she said, lightly patting him on the shoulder as she passed. The assistant froze for a second, staring at her back. She had never touched him before.</p>
+          <figure class="story-figure">
+            <img src="assets/pride-assistant-interaction.jpg" alt="Kaguya’s unexpected gentleness surprises the assistant.">
+            <figcaption>Kaguya’s unexpected gentleness surprises the assistant.</figcaption>
+          </figure>
+
+<p>Throughout the day, more and more staff noticed the difference. Dr. Jones answered questions patiently. She did not blame them for their mistakes. She simply corrected them. She even took a nap after lunch. She seemed less like the person she used to be.</p>
+<p>By evening, most of the staff had left. Dr. Jones&#x27;s desk was covered with papers and reports. A new employee passed by. Driven by curiosity, he summoned up his courage and knocked on the door. &quot;Dr. Jones... you can go. I&#x27;ll clean this up for you.&quot; She turned to him. &quot;Thank you. But you don&#x27;t have to.&quot; &quot;It&#x27;s nothing. You should rest.&quot; At last, she said, &quot;Thank you. It&#x27;s kind of you to do that.&quot; &quot;Why do the other staff seem so afraid of her? What a gentle lady she is,&quot; the young man said to himself after Dr. Jones left.</p>
+          <figure class="story-figure">
+            <img src="assets/pride-desk-help.jpg" alt="A quiet act of help changes how Kaguya reads the office.">
+            <figcaption>A quiet act of help changes how Kaguya reads the office.</figcaption>
+          </figure>
+
+<p>That night, Dr. Jones returned home. But instead of sitting on the sofa or lying on the bed, she went to a corner. There, she opened a port at her lower back and connected it to the charging pile on the wall. The light in her eyes faded.</p>
+          <figure class="story-figure">
+            <img src="assets/pride-charging-reveal.jpg" alt="At home, the truth beneath Dr. Jones’s perfect image begins to show.">
+            <figcaption>At home, the truth beneath Dr. Jones’s perfect image begins to show.</figcaption>
+          </figure>
+
+<p>Six meters underground, in a well-equipped basement, the real Dr. Jones removed a visual headset and rubbed her aching eyes. She sighed, then took several pills from the bottles beside her bed. She could not drive the scene before leaving work out of her mind. &quot;Too rushed,&quot; she said to herself. &quot;I should have corrected her behavior patterns too.&quot;</p>
+<p>Dr. Jones had been stern since she was a child. As a student, she despised weakness. She had no patience for those who fell behind. She neither helped others nor accepted help. Avoiding unnecessary friendships, she threw herself into AI research in college.</p>
+<p>By the age of twenty-seven, she had been accepted by one of the world&#x27;s finest institutes. Within a year, she rose to become the leader of her department. But even there, surrounded by other brilliant scientists, she remained severe and distant.</p>
+<p>As a result, years of overwork and harsh self-discipline ruined her health. She could have asked for help and care, but pride got in the way. Instead, she used medicine to keep herself standing. But she continued to grow weaker day by day.</p>
+<p>At last, unable to bear showing her weakness to her colleagues, she activated the secret she had prepared after college: Kaguya, a humanoid copy of herself, to take her place.</p>
+<p>Unfortunately, things did not go as smoothly as she had expected. After only one day, she was already disappointed by Kaguya&#x27;s performance. Compared with letting others see such a slow and hesitant version of herself, she would rather appear in person, pale and weak. But her body could no longer carry her back to the institute.</p>
+<p>In fact, Dr. Jones was not the only one troubled. Inside Kaguya&#x27;s mind, confusion spread quietly. She reviewed the day in her robotic mind: the extra pause before answering, the startled look of the assistant, the employee who had cleaned her desk. She had made errors. What she did not understand was why those errors had drawn from others not only suspicion, but a strange and gentle concern.</p>
+<p>Over the next few days, Kaguya continued to go to the institute in Dr. Jones&#x27;s place. She still made mistakes. Sometimes she paused too long before answering. Sometimes she smiled when Dr. Jones would have remained cold and silent. But gradually, she noticed something strange. The staff were not looking at her with contempt. They looked at her with worry, kindness, and hesitation. Someone left medicine on her desk. Someone quietly brought her hot coffee. Her assistant even asked twice a day if she needed to go home early.</p>
+<p>Every night, Kaguya reviewed these details in silence. According to Dr. Jones&#x27;s prediction, weakness would only bring shame and disrespect. But the facts in front of her did not support that conclusion. Then Kaguya finally understood something her creator had never understood: Dr. Jones did not need a replacement. She needed help.</p>
+<p>On the fifth day, Kaguya stood in the middle of the office and said, &quot;Please stop your work for a moment. I have something important to tell you.&quot; Everyone looked up at her. &quot;I am not Dr. Jones,&quot; she said calmly. &quot;My model name is Kaguya. I was created by Dr. Jones to take her place because she did not want anyone to see her current condition.&quot; Silence filled the whole office. &quot;She is seriously ill,&quot; Kaguya continued. &quot;She thought you would look down on her if you saw her weak.&quot;</p>
+
+          <figure class="story-figure">
+            <img src="assets/pride-truth-reveal.jpg" alt="Kaguya reveals the secret to the staff, turning fear into concern.">
+            <figcaption>Kaguya reveals the secret to the staff, turning fear into concern.</figcaption>
+          </figure>
+<p>A few minutes later, they were all standing outside Dr. Jones&#x27;s house. When the door opened, Dr. Jones looked pale and shocked. She tried to say, &quot;I&#x27;m fine.&quot; But this time, no one believed her, and no one laughed at her either. Her assistant stepped forward first. &quot;Boss,&quot; he said softly, &quot;you should have told us.&quot; Dr. Jones looked at Kaguya, then at the people around her. For the first time in her life, she did not turn away from help.</p>
+    </article>
+  </div>
+</section>
+</main>
+<footer>Lofi · Love and Fiction · Group 6 Digital Magazine</footer>
+
+<script>
+  (function () {
+    const readButton = document.getElementById("readStoryButton");
+    const stopButton = document.getElementById("stopStoryButton");
+    const storyPanel = document.querySelector(".story-panel");
+
+    function getStoryText() {
+      const title = storyPanel.querySelector("h1")?.innerText || "";
+      const paragraphs = Array.from(storyPanel.querySelectorAll("p"))
+        .filter((p) => !p.closest(".tech-card"))
+        .map((p) => p.innerText.trim())
+        .filter(Boolean)
+        .join("\n\n");
+      return `${title}. ${paragraphs}`;
+    }
+
+    function resetButton() {
+      readButton.textContent = "🔊 Read Story";
+    }
+
+    if (readButton && stopButton && storyPanel) {
+      readButton.addEventListener("click", function () {
+        if (!("speechSynthesis" in window)) {
+          alert("Sorry, this browser does not support text-to-speech.");
+          return;
+        }
+
+        if (window.speechSynthesis.speaking && !window.speechSynthesis.paused) {
+          window.speechSynthesis.pause();
+          readButton.textContent = "▶️ Resume";
+          return;
+        }
+
+        if (window.speechSynthesis.paused) {
+          window.speechSynthesis.resume();
+          readButton.textContent = "⏸ Pause";
+          return;
+        }
+
+        window.speechSynthesis.cancel();
+
+        const utterance = new SpeechSynthesisUtterance(getStoryText());
+        utterance.lang = "en-US";
+        utterance.rate = 0.92;
+        utterance.pitch = 1;
+
+        utterance.onend = resetButton;
+        utterance.onerror = resetButton;
+
+        window.speechSynthesis.speak(utterance);
+        readButton.textContent = "⏸ Pause";
+      });
+
+      stopButton.addEventListener("click", function () {
+        if ("speechSynthesis" in window) {
+          window.speechSynthesis.cancel();
+          resetButton();
+        }
+      });
+
+      window.addEventListener("beforeunload", function () {
+        if ("speechSynthesis" in window) {
+          window.speechSynthesis.cancel();
+        }
+      });
+    }
+  })();
+</script>
+
+</body>
+</html>

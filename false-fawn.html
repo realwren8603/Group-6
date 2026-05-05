@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The False Fawn of Dry Gulch | Lofi · Love and Fiction</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:Georgia,'Times New Roman',serif;background:#070912;color:#f5f7ff;line-height:1.7}a{color:inherit;text-decoration:none}
+header{position:sticky;top:0;z-index:50;backdrop-filter:blur(16px);background:rgba(7,9,18,.82);border-bottom:1px solid rgba(255,255,255,.1)}
+.nav{max-width:1180px;margin:0 auto;padding:16px 22px;display:flex;justify-content:space-between;align-items:center;gap:20px;font-family:Arial,sans-serif}.brand{display:flex;align-items:center;gap:12px;letter-spacing:.16em;text-transform:uppercase;font-size:13px;color:#d3ddff}.logo-mark{width:34px;height:34px;border-radius:14px;background:radial-gradient(circle at 44% 34%,#fff,transparent 18%),linear-gradient(135deg,#91adff,#ff9ad5);box-shadow:0 0 24px rgba(145,173,255,.55)}.nav-links{display:flex;flex-wrap:wrap;gap:16px;font-size:13px;color:#dbe4ff}.nav-links a{opacity:.82;transition:.2s}.nav-links a:hover{opacity:1;color:#fff}
+.intro{min-height:52vh;display:grid;align-items:center;max-width:1180px;margin:0 auto;padding:90px 22px 70px}.kicker{font-family:Arial,sans-serif;color:#a9c0ff;text-transform:uppercase;letter-spacing:.32em;font-size:12px;margin-bottom:18px}h1{font-size:clamp(50px,8vw,110px);line-height:.92;letter-spacing:-.07em;margin-bottom:22px}h2{font-size:clamp(34px,5vw,62px);line-height:1;letter-spacing:-.055em;margin-bottom:16px}.intro p{max-width:700px;color:#cbd6ef;font-family:Arial,sans-serif;font-size:18px}
+.quick-index{max-width:1180px;margin:0 auto;padding:0 22px 55px;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px}.index-card{min-height:150px;padding:16px;border-radius:22px;background:rgba(255,255,255,.075);border:1px solid rgba(255,255,255,.14);display:flex;flex-direction:column;justify-content:space-between;transition:.2s;font-family:Arial,sans-serif}.index-card:hover{transform:translateY(-4px);background:rgba(255,255,255,.12)}.index-card span{color:#aecaff;font-size:12px;letter-spacing:.12em;text-transform:uppercase}.index-card strong{display:block;color:#fff;font-size:16px;line-height:1.15;margin-top:8px}.index-card em{color:#c9d4ec;font-size:12px;font-style:normal;margin-top:10px}
+.story-section{position:relative;overflow:hidden;padding:84px 22px}.story-section::before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.95}.story-inner{position:relative;z-index:2;max-width:1180px;margin:0 auto;display:grid;grid-template-columns:.42fr .58fr;gap:34px;align-items:start}.cover-column{position:sticky;top:96px;display:grid;gap:18px}.cover-img{width:100%;display:block;border-radius:30px;border:1px solid rgba(255,255,255,.18);box-shadow:0 28px 80px rgba(0,0,0,.42);background:rgba(255,255,255,.08)}.story-meta{padding:24px;border-radius:26px;background:rgba(7,9,18,.64);border:1px solid rgba(255,255,255,.14);backdrop-filter:blur(12px);font-family:Arial,sans-serif}.story-number{color:#aecaff;font-size:12px;letter-spacing:.18em;text-transform:uppercase;margin-bottom:12px}.story-meta h3{font-family:Georgia,'Times New Roman',serif;font-size:32px;letter-spacing:-.04em;margin-bottom:12px}.story-meta p{color:#d4def4;font-size:14px;margin-bottom:10px}.btn{font-family:Arial,sans-serif;display:inline-flex;align-items:center;justify-content:center;padding:11px 18px;border-radius:999px;border:1px solid rgba(255,255,255,.22);background:rgba(255,255,255,.08);color:#fff;transition:.2s;font-size:14px}.btn:hover{transform:translateY(-2px)}
+.story-panel{padding:38px;border-radius:32px;background:rgba(244,241,232,.96);color:#161a23;box-shadow:0 28px 80px rgba(0,0,0,.36)}.location-ribbon{display:inline-flex;margin-bottom:18px;padding:8px 12px;border-radius:999px;background:#e6e9f3;color:#30384d;font-family:Arial,sans-serif;font-size:13px;font-weight:700}.byline{font-family:Arial,sans-serif;color:#656b7a;margin-bottom:24px}.story-panel p{font-size:18px;color:#222633;margin-bottom:18px}.tech-box{margin:24px 0 30px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.tech-card{padding:17px;border-radius:20px;background:#e6e9f3;border:1px solid #d2d7e8;font-family:Arial,sans-serif}.tech-card h4{color:#151a2a;margin-bottom:7px;font-size:15px}.tech-card p{color:#3d4558;font-size:13px;margin-bottom:0}
+.pride{background:#08111d}.pride::before{background:radial-gradient(circle at 16% 12%,rgba(237,198,122,.2),transparent 28%),radial-gradient(circle at 82% 28%,rgba(113,177,196,.2),transparent 31%),linear-gradient(180deg,#0d1d2b,#111827 48%,#070a11)}.outside{background:#071522}.outside::before{background:radial-gradient(circle at 42% 22%,rgba(140,206,255,.22),transparent 28%),radial-gradient(circle at 78% 48%,rgba(58,107,145,.22),transparent 36%),linear-gradient(180deg,#0b2134,#0d1a27 52%,#050b12)}.shadow{background:#061414}.shadow::before{background:radial-gradient(circle at 18% 18%,rgba(48,126,104,.22),transparent 31%),radial-gradient(circle at 82% 30%,rgba(95,150,160,.16),transparent 30%),linear-gradient(180deg,#0b2725,#0a1818 50%,#050808)}.fawn{background:#211309}.fawn::before{background:radial-gradient(circle at 22% 20%,rgba(255,187,86,.23),transparent 32%),radial-gradient(circle at 82% 28%,rgba(126,61,28,.22),transparent 34%),linear-gradient(180deg,#3a2111,#21140d 50%,#090604)}.man{background:#21180d}.man::before{background:radial-gradient(circle at 20% 20%,rgba(255,207,131,.24),transparent 30%),radial-gradient(circle at 70% 28%,rgba(255,170,201,.18),transparent 32%),linear-gradient(180deg,#2d2114,#1c1612 52%,#0d0a08)}
+
+    .story-figure {
+      margin: 30px 0 34px;
+      border-radius: 26px;
+      overflow: hidden;
+      background: #111827;
+      border: 1px solid rgba(17, 21, 34, 0.12);
+      box-shadow: 0 20px 48px rgba(0,0,0,0.22);
+    }
+
+    .story-figure img {
+      width: 100%;
+      display: block;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+    }
+
+    .story-figure figcaption {
+      padding: 12px 16px 14px;
+      background: rgba(255,255,255,0.72);
+      color: #4f586b;
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+footer{padding:36px 22px 54px;text-align:center;color:#8290ad;font-family:Arial,sans-serif;font-size:13px;background:#070912}
+@media(max-width:980px){.quick-index{grid-template-columns:repeat(2,minmax(0,1fr))}.story-inner{grid-template-columns:1fr}.cover-column{position:static}.cover-img{max-width:620px;margin:0 auto}}@media(max-width:640px){.nav{align-items:flex-start;flex-direction:column}.quick-index,.tech-box{grid-template-columns:1fr}.story-panel{padding:24px}.story-panel p{font-size:16px}}
+</style>
+</head>
+<body>
+<header><nav class="nav"><a href="index.html" class="brand"><span class="logo-mark"></span><span>Lofi · Love and Fiction</span></a><div class="nav-links"><a href="index.html">Home</a><a href="pride.html">Pride</a><a href="outside-eden.html">Outside Eden</a><a href="white-coated-shadow.html">White Shadow</a><a href="false-fawn.html">False Fawn</a><a href="man-no-one-knew.html">Tom & Amy</a></div></nav></header>
+<main>
+<section class="story-section fawn" id="false-fawn">
+  <div class="story-inner">
+    <aside class="cover-column">
+      <img class="cover-img" src="assets/false-fawn-cover.jpg" alt="Cover for The False Fawn of Dry Gulch">
+      <div class="story-meta">
+        <div class="story-number">STORY 04</div>
+        <h3>The False Fawn of Dry Gulch</h3>
+        <p><strong>Author:</strong> Leo Luo</p>
+        <p><strong>Location:</strong> Dry Gulch, Arizona</p>
+        <p><strong>Year:</strong> 1887</p>
+        <p><strong>Mood:</strong> dusty amber western poster style.</p>
+        <a class="btn" href="index.html#map">Back to Map</a>
+      </div>
+    </aside>
+    <article class="story-panel">
+      <span class="location-ribbon">Dry Gulch, Arizona — 1887</span>
+      <h2>The False Fawn of Dry Gulch</h2>
+      <div class="byline">By Leo Luo</div>
+          <div class="reader-controls">
+            <button class="read-aloud-btn" id="readStoryButton" type="button" aria-label="Read this story aloud">🔊 Read Story</button>
+            <button class="stop-aloud-btn" id="stopStoryButton" type="button" aria-label="Stop reading">⏹ Stop</button>
+          </div>
+          <div class="voice-note">Click the speaker button to listen to this story. Click again to pause or resume.</div>
+
+      
+
+      <p>In the sunbaked dust of Dry Gulch, where saloon doors creaked day and night and wanted posters curled at the edges, two cowboys at the top of the bounty-hunting world sat drinking and laughing. They were Cole and Toby.</p>
+<p>Cole was tall and lean, with auburn hair, a light stubble covering his jaw, and a scar across his forehead, earned years ago when he stopped a gang of robbers. He moved silent as a ghost, quick on the draw, sharp-tongued but steady, always thinking three steps ahead and never missing a shot. He wore a dust-brown coat, scuffed boots, and a revolver worn smooth from constant use.</p>
+<p>Toby was his trusted partner of many years. Broad-shouldered and warm-faced, with curly dark brown hair and eyes that crinkled when he smiled. Strong, calm, and soft-spoken, he was the steady muscle to Cole’s wit, patching up wounds, sharing his last biscuit, and never letting his partner come to harm.</p>
+<p>Together they were unstoppable. They tracked outlaws side by side, split bounties fairly, covered each other in gunfights, and drank together at sunset. The whole town called them the Dry Gulch Twins, even though they shared no blood. No bounty was too tough for them — they were the finest team around.</p>
+          <figure class="story-figure">
+            <img src="assets/fawn-partners-saloon.jpg" alt="Cole and Toby, the finest team in Dry Gulch, before the lie arrives.">
+            <figcaption>Cole and Toby, the finest team in Dry Gulch, before the lie arrives.</figcaption>
+          </figure>
+
+<p>Then one day, her arrival nearly shattered their unbreakable bond.</p>
+<p>Under the scorching sun, she stepped down from the carriage like a beauty from a dream. Slender and graceful, with long chestnut hair falling over her shoulders, sun-kissed skin, pale rose-tinted lips, and deep, clear honey eyes that made every man who met her gaze fall for her. She wore a pale cream dress that fluttered in the wind, a small bonnet, and silk-fitting gloves. Her voice was low and sweet, and every word left men breathless, leaning in to listen.</p>
+<p>She said her name was Lila — wandering alone, helpless, and in desperate need of protection.</p>
+          <figure class="story-figure">
+            <img src="assets/fawn-lila-arrival.jpg" alt="Lila steps into Dry Gulch and changes the balance between the two partners.">
+            <figcaption>Lila steps into Dry Gulch and changes the balance between the two partners.</figcaption>
+          </figure>
+
+<p>Cole fell first. The sharp, unshakable cowboy softened at the sound of her voice, his fierce eyes growing gentle whenever he looked at her. Toby soon followed. The kind, steady cowboy offered to carry her bags, walk her to the general store, and keep rough strangers away from her.</p>
+<p>And the two cowboys fell in love with the same person.</p>
+<p>That was how their unbreakable brotherhood cracked overnight.</p>
+<p>They bickered over small things, their glances turned cold, and their jokes turned sharp. What was once perfect teamwork curdled into jealousy over this woman. They stopped riding together. Stopped talking. Stopped watching each other’s backs.</p>
+<p>One evening outside the saloon, their long-simmering resentment finally erupted — throwing angry, foolish punches over a woman who had barely spoken to either of them. The town watched in shock as their two greatest heroes fought in the dirt over a stranger.</p>
+<p>Just then, a new wanted poster went up.</p>
+<p>Tacked to the post office wall, the ink still shiny: a fugitive wanted for theft and fraud across three territories, with a twenty-thousand-dollar reward.</p>
+<p>The name on the paper: Voss.</p>
+<p>The face beneath it turned their blood cold.</p>
+          <figure class="story-figure">
+            <img src="assets/fawn-wanted-reveal.jpg" alt="The wanted poster reveals the disguise behind the beauty.">
+            <figcaption>The wanted poster reveals the disguise behind the beauty.</figcaption>
+          </figure>
+
+<p>It was Lila.</p>
+<p>But not Lila.</p>
+<p>Behind the dress, the hair, the soft voice and gentle eyes was a man.</p>
+<p>According to the notice, Voss was a master of disguise. He dressed as a woman, wore a wig, painted his face, and altered his features to fool every town he robbed. He charmed men out of their money, trust, and loyalty, then vanished before they realized they’d been played. The delicate lady they’d fought over was a ruthless con artist wrapped in silk and lies. The “beauty” that broke their friendship was nothing but a carefully crafted costume.</p>
+<p>Cole and Toby stared at the poster, then at each other, their knuckles still bruised from fighting.</p>
+<p>Embarrassment, shame, and foolishness burned inside them. But deep down, their old bond stirred — quiet, stubborn, still there.</p>
+<p>No words were needed.</p>
+<p>Cole spat in the dust. Toby scratched the back of his head repeatedly.</p>
+<p>“You’re an idiot,” Cole muttered.</p>
+<p>“Not any worse than you,” Toby replied.</p>
+<p>No apologies. No arguments. They looked at each other and let out a bitter, shared laugh at how easily they’d been tricked.</p>
+<p>After a short silence:</p>
+<p>“You wanna play a game?” Cole asked Toby.</p>
+<p>“What game?”</p>
+<p>“A ghost hunt. And we are hunters, as for the ghost…”</p>
+<p>That same day, they saddled their horses.</p>
+<p>Coats dust-streaked, jaws set, hands resting easily on their revolvers. Jealousy was gone. Anger was gone. Only their old partnership remained — sharp, steady, unbroken.</p>
+<p>Voss had fooled them once.</p>
+<p>He would not fool them again.</p>
+<p>Side by side, the two cowboys rode out of Dry Gulch, chasing the con man in a dress.</p>
+<p>The trail was cold, but their determination burned hotter.</p>
+<p>This time, they would not be fooled by a pretty face.</p>
+    </article>
+  </div>
+</section>
+</main>
+<footer>Lofi · Love and Fiction · Group 6 Digital Magazine</footer>
+
+<script>
+  (function () {
+    const readButton = document.getElementById("readStoryButton");
+    const stopButton = document.getElementById("stopStoryButton");
+    const storyPanel = document.querySelector(".story-panel");
+
+    function getStoryText() {
+      const title = storyPanel.querySelector("h1")?.innerText || "";
+      const paragraphs = Array.from(storyPanel.querySelectorAll("p"))
+        .filter((p) => !p.closest(".tech-card"))
+        .map((p) => p.innerText.trim())
+        .filter(Boolean)
+        .join("\n\n");
+      return `${title}. ${paragraphs}`;
+    }
+
+    function resetButton() {
+      readButton.textContent = "🔊 Read Story";
+    }
+
+    if (readButton && stopButton && storyPanel) {
+      readButton.addEventListener("click", function () {
+        if (!("speechSynthesis" in window)) {
+          alert("Sorry, this browser does not support text-to-speech.");
+          return;
+        }
+
+        if (window.speechSynthesis.speaking && !window.speechSynthesis.paused) {
+          window.speechSynthesis.pause();
+          readButton.textContent = "▶️ Resume";
+          return;
+        }
+
+        if (window.speechSynthesis.paused) {
+          window.speechSynthesis.resume();
+          readButton.textContent = "⏸ Pause";
+          return;
+        }
+
+        window.speechSynthesis.cancel();
+
+        const utterance = new SpeechSynthesisUtterance(getStoryText());
+        utterance.lang = "en-US";
+        utterance.rate = 0.92;
+        utterance.pitch = 1;
+
+        utterance.onend = resetButton;
+        utterance.onerror = resetButton;
+
+        window.speechSynthesis.speak(utterance);
+        readButton.textContent = "⏸ Pause";
+      });
+
+      stopButton.addEventListener("click", function () {
+        if ("speechSynthesis" in window) {
+          window.speechSynthesis.cancel();
+          resetButton();
+        }
+      });
+
+      window.addEventListener("beforeunload", function () {
+        if ("speechSynthesis" in window) {
+          window.speechSynthesis.cancel();
+        }
+      });
+    }
+  })();
+</script>
+
+</body>
+</html>

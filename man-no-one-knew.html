@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The Man No One Knew | Lofi · Love and Fiction</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:Georgia,'Times New Roman',serif;background:#070912;color:#f5f7ff;line-height:1.7}a{color:inherit;text-decoration:none}
+header{position:sticky;top:0;z-index:50;backdrop-filter:blur(16px);background:rgba(7,9,18,.82);border-bottom:1px solid rgba(255,255,255,.1)}
+.nav{max-width:1180px;margin:0 auto;padding:16px 22px;display:flex;justify-content:space-between;align-items:center;gap:20px;font-family:Arial,sans-serif}.brand{display:flex;align-items:center;gap:12px;letter-spacing:.16em;text-transform:uppercase;font-size:13px;color:#d3ddff}.logo-mark{width:34px;height:34px;border-radius:14px;background:radial-gradient(circle at 44% 34%,#fff,transparent 18%),linear-gradient(135deg,#91adff,#ff9ad5);box-shadow:0 0 24px rgba(145,173,255,.55)}.nav-links{display:flex;flex-wrap:wrap;gap:16px;font-size:13px;color:#dbe4ff}.nav-links a{opacity:.82;transition:.2s}.nav-links a:hover{opacity:1;color:#fff}
+.intro{min-height:52vh;display:grid;align-items:center;max-width:1180px;margin:0 auto;padding:90px 22px 70px}.kicker{font-family:Arial,sans-serif;color:#a9c0ff;text-transform:uppercase;letter-spacing:.32em;font-size:12px;margin-bottom:18px}h1{font-size:clamp(50px,8vw,110px);line-height:.92;letter-spacing:-.07em;margin-bottom:22px}h2{font-size:clamp(34px,5vw,62px);line-height:1;letter-spacing:-.055em;margin-bottom:16px}.intro p{max-width:700px;color:#cbd6ef;font-family:Arial,sans-serif;font-size:18px}
+.quick-index{max-width:1180px;margin:0 auto;padding:0 22px 55px;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px}.index-card{min-height:150px;padding:16px;border-radius:22px;background:rgba(255,255,255,.075);border:1px solid rgba(255,255,255,.14);display:flex;flex-direction:column;justify-content:space-between;transition:.2s;font-family:Arial,sans-serif}.index-card:hover{transform:translateY(-4px);background:rgba(255,255,255,.12)}.index-card span{color:#aecaff;font-size:12px;letter-spacing:.12em;text-transform:uppercase}.index-card strong{display:block;color:#fff;font-size:16px;line-height:1.15;margin-top:8px}.index-card em{color:#c9d4ec;font-size:12px;font-style:normal;margin-top:10px}
+.story-section{position:relative;overflow:hidden;padding:84px 22px}.story-section::before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.95}.story-inner{position:relative;z-index:2;max-width:1180px;margin:0 auto;display:grid;grid-template-columns:.42fr .58fr;gap:34px;align-items:start}.cover-column{position:sticky;top:96px;display:grid;gap:18px}.cover-img{width:100%;display:block;border-radius:30px;border:1px solid rgba(255,255,255,.18);box-shadow:0 28px 80px rgba(0,0,0,.42);background:rgba(255,255,255,.08)}.story-meta{padding:24px;border-radius:26px;background:rgba(7,9,18,.64);border:1px solid rgba(255,255,255,.14);backdrop-filter:blur(12px);font-family:Arial,sans-serif}.story-number{color:#aecaff;font-size:12px;letter-spacing:.18em;text-transform:uppercase;margin-bottom:12px}.story-meta h3{font-family:Georgia,'Times New Roman',serif;font-size:32px;letter-spacing:-.04em;margin-bottom:12px}.story-meta p{color:#d4def4;font-size:14px;margin-bottom:10px}.btn{font-family:Arial,sans-serif;display:inline-flex;align-items:center;justify-content:center;padding:11px 18px;border-radius:999px;border:1px solid rgba(255,255,255,.22);background:rgba(255,255,255,.08);color:#fff;transition:.2s;font-size:14px}.btn:hover{transform:translateY(-2px)}
+.story-panel{padding:38px;border-radius:32px;background:rgba(244,241,232,.96);color:#161a23;box-shadow:0 28px 80px rgba(0,0,0,.36)}.location-ribbon{display:inline-flex;margin-bottom:18px;padding:8px 12px;border-radius:999px;background:#e6e9f3;color:#30384d;font-family:Arial,sans-serif;font-size:13px;font-weight:700}.byline{font-family:Arial,sans-serif;color:#656b7a;margin-bottom:24px}.story-panel p{font-size:18px;color:#222633;margin-bottom:18px}.tech-box{margin:24px 0 30px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.tech-card{padding:17px;border-radius:20px;background:#e6e9f3;border:1px solid #d2d7e8;font-family:Arial,sans-serif}.tech-card h4{color:#151a2a;margin-bottom:7px;font-size:15px}.tech-card p{color:#3d4558;font-size:13px;margin-bottom:0}
+.pride{background:#08111d}.pride::before{background:radial-gradient(circle at 16% 12%,rgba(237,198,122,.2),transparent 28%),radial-gradient(circle at 82% 28%,rgba(113,177,196,.2),transparent 31%),linear-gradient(180deg,#0d1d2b,#111827 48%,#070a11)}.outside{background:#071522}.outside::before{background:radial-gradient(circle at 42% 22%,rgba(140,206,255,.22),transparent 28%),radial-gradient(circle at 78% 48%,rgba(58,107,145,.22),transparent 36%),linear-gradient(180deg,#0b2134,#0d1a27 52%,#050b12)}.shadow{background:#061414}.shadow::before{background:radial-gradient(circle at 18% 18%,rgba(48,126,104,.22),transparent 31%),radial-gradient(circle at 82% 30%,rgba(95,150,160,.16),transparent 30%),linear-gradient(180deg,#0b2725,#0a1818 50%,#050808)}.fawn{background:#211309}.fawn::before{background:radial-gradient(circle at 22% 20%,rgba(255,187,86,.23),transparent 32%),radial-gradient(circle at 82% 28%,rgba(126,61,28,.22),transparent 34%),linear-gradient(180deg,#3a2111,#21140d 50%,#090604)}.man{background:#21180d}.man::before{background:radial-gradient(circle at 20% 20%,rgba(255,207,131,.24),transparent 30%),radial-gradient(circle at 70% 28%,rgba(255,170,201,.18),transparent 32%),linear-gradient(180deg,#2d2114,#1c1612 52%,#0d0a08)}
+
+    .story-figure {
+      margin: 30px 0 34px;
+      border-radius: 26px;
+      overflow: hidden;
+      background: #111827;
+      border: 1px solid rgba(17, 21, 34, 0.12);
+      box-shadow: 0 20px 48px rgba(0,0,0,0.22);
+    }
+
+    .story-figure img {
+      width: 100%;
+      display: block;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+    }
+
+    .story-figure figcaption {
+      padding: 12px 16px 14px;
+      background: rgba(255,255,255,0.72);
+      color: #4f586b;
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+footer{padding:36px 22px 54px;text-align:center;color:#8290ad;font-family:Arial,sans-serif;font-size:13px;background:#070912}
+@media(max-width:980px){.quick-index{grid-template-columns:repeat(2,minmax(0,1fr))}.story-inner{grid-template-columns:1fr}.cover-column{position:static}.cover-img{max-width:620px;margin:0 auto}}@media(max-width:640px){.nav{align-items:flex-start;flex-direction:column}.quick-index,.tech-box{grid-template-columns:1fr}.story-panel{padding:24px}.story-panel p{font-size:16px}}
+</style>
+</head>
+<body>
+<header><nav class="nav"><a href="index.html" class="brand"><span class="logo-mark"></span><span>Lofi · Love and Fiction</span></a><div class="nav-links"><a href="index.html">Home</a><a href="pride.html">Pride</a><a href="outside-eden.html">Outside Eden</a><a href="white-coated-shadow.html">White Shadow</a><a href="false-fawn.html">False Fawn</a><a href="man-no-one-knew.html">Tom & Amy</a></div></nav></header>
+<main>
+<section class="story-section man" id="man-no-one-knew">
+  <div class="story-inner">
+    <aside class="cover-column">
+      <img class="cover-img" src="assets/man-no-one-knew-cover.jpg" alt="Cover for The Man No One Knew">
+      <div class="story-meta">
+        <div class="story-number">STORY 05</div>
+        <h3>The Man No One Knew</h3>
+        <p><strong>Author:</strong> Kerwin Zang</p>
+        <p><strong>Location:</strong> Houston, Texas</p>
+        <p><strong>Year:</strong> 2043</p>
+        <p><strong>Mood:</strong> warm sunset romance with quiet regret.</p>
+        <a class="btn" href="index.html#map">Back to Map</a>
+      </div>
+    </aside>
+    <article class="story-panel">
+      <span class="location-ribbon">Houston, Texas — 2043</span>
+      <h2>The Man No One Knew</h2>
+      <div class="byline">By Kerwin Zang</div>
+          <div class="reader-controls">
+            <button class="read-aloud-btn" id="readStoryButton" type="button" aria-label="Read this story aloud">🔊 Read Story</button>
+            <button class="stop-aloud-btn" id="stopStoryButton" type="button" aria-label="Stop reading">⏹ Stop</button>
+          </div>
+          <div class="voice-note">Click the speaker button to listen to this story. Click again to pause or resume.</div>
+
+      
+
+      <p>No one believed that Tom could fall in love with a girl like Amy.</p>
+<p>In Tex City, Tom was known as a mobster—a quiet, dangerous man with a cold heart. People didn’t know much about him. No one knew where he came from or why he had so much power. They only knew one thing: it was better not to get too close to him.</p>
+<p>But everything changed the day he met Amy.</p>
+<p>It was an ordinary afternoon, yet for Tom, it became unforgettable. Amy was laughing under the soft sunlight, and something inside Tom shifted. For the first time in years, he felt something warm growing in his chest.</p>
+          <figure class="story-figure">
+            <img src="assets/man-first-sight.jpg" alt="Tom sees Amy in a moment of ordinary warmth that changes everything.">
+            <figcaption>Tom sees Amy in a moment of ordinary warmth that changes everything.</figcaption>
+          </figure>
+
+<p>From that moment on, Tom wanted only one thing—to get closer to her.</p>
+<p>Tom knew almost everything about Tex City. With his connections and influence, he could find anyone, anytime. So finding Amy was easy.</p>
+<p>One evening, he followed her to her favorite restaurant. He didn’t mean to scare her—he just wanted to see her again.</p>
+<p>But when Amy noticed him, her face turned pale.</p>
+          <figure class="story-figure">
+            <img src="assets/man-restaurant-fear.jpg" alt="Tom realizes that his presence frightens the person he wants to protect.">
+            <figcaption>Tom realizes that his presence frightens the person he wants to protect.</figcaption>
+          </figure>
+
+<p>She stood up immediately and ran out, like a frightened rabbit escaping a hunter.</p>
+<p>Tom froze. He didn’t understand. He had done nothing. Yet to her, he was terrifying.</p>
+<p>That night, for the first time, Tom realized something:</p>
+<p>the man he was… was the reason she would never accept him.</p>
+<p>Still, he didn’t give up.</p>
+<p>Tom decided to try again—this time, differently.</p>
+<p>He stopped following her. Instead, he waited. Days passed, then weeks. One afternoon, he saw her struggling to carry heavy boxes outside a bookstore.</p>
+<p>He hesitated… then walked over.</p>
+<p>“Do you need help?” he asked quietly.</p>
+<p>Amy looked up, surprised. Fear flickered in her eyes—but she didn’t run this time.</p>
+<p>“…Okay,” she said, after a pause.</p>
+<p>Tom carried the boxes for her without saying much. When he finished, he simply nodded and left.</p>
+<p>That small moment stayed with Amy.</p>
+<p>After that, Tom began to change.</p>
+<p>He reduced his involvement in the mob. He stopped using violence. People in the city began to notice something strange—the once cold and distant Tom was becoming… quieter, softer.</p>
+<p>Weeks later, he saw Amy again.</p>
+<p>This time, she didn’t run.</p>
+<p>They talked. Just simple things—the weather, the bookstore, small details of life. Tom didn’t mention his past. For once, he was just a normal man.</p>
+<p>For a moment, it felt like things could be different.</p>
+<p>But reality came back quickly.</p>
+<p>One night, Amy found out who Tom really was.</p>
+<p>Fear returned to her eyes—stronger than before.</p>
+<p>“You lied to me,” she said, her voice shaking.</p>
+<p>Tom wanted to explain, but the words felt heavy and useless. Everything he had been… stood between them.</p>
+<p>She turned and walked away.</p>
+<p>That was his second failure.</p>
+<p>Tom stood alone in the empty street.</p>
+<p>He finally understood something he had been avoiding:</p>
+<p>love wasn’t something he could take or force. It wasn’t something his power could control.</p>
+<p>If he truly wanted Amy to be happy… he had to let her go.</p>
+<p>Months passed.</p>
+<p>Tom left Tex City. He disappeared, just as mysteriously as he had appeared years ago.</p>
+<p>People still talked about him sometimes—the mobster with a cold heart.</p>
+<p>But they never knew that, once, he had tried to change.</p>
+<p>One quiet afternoon, Amy stood outside the same bookstore.</p>
+<p>She noticed a small package left by the door.</p>
+<p>Inside was a book she had once mentioned she loved… and a simple note:</p>
+<p>“You deserve a peaceful life.”</p>
+          <figure class="story-figure">
+            <img src="assets/man-final-gift.jpg" alt="Amy receives the gift Tom leaves behind: peace instead of possession.">
+            <figcaption>Amy receives the gift Tom leaves behind: peace instead of possession.</figcaption>
+          </figure>
+
+<p>There was no name.</p>
+<p>But somehow, she knew who it was from.</p>
+<p>Amy held the book tightly, watching the sunset in silence.</p>
+<p>And somewhere far away, for the first time in his life,</p>
+<p>Tom chose not to return.</p>
+    </article>
+  </div>
+</section>
+
+
+</main>
+<footer>Lofi · Love and Fiction · Group 6 Digital Magazine</footer>
+
+<script>
+  (function () {
+    const readButton = document.getElementById("readStoryButton");
+    const stopButton = document.getElementById("stopStoryButton");
+    const storyPanel = document.querySelector(".story-panel");
+
+    function getStoryText() {
+      const title = storyPanel.querySelector("h1")?.innerText || "";
+      const paragraphs = Array.from(storyPanel.querySelectorAll("p"))
+        .filter((p) => !p.closest(".tech-card"))
+        .map((p) => p.innerText.trim())
+        .filter(Boolean)
+        .join("\n\n");
+      return `${title}. ${paragraphs}`;
+    }
+
+    function resetButton() {
+      readButton.textContent = "🔊 Read Story";
+    }
+
+    if (readButton && stopButton && storyPanel) {
+      readButton.addEventListener("click", function () {
+        if (!("speechSynthesis" in window)) {
+          alert("Sorry, this browser does not support text-to-speech.");
+          return;
+        }
+
+        if (window.speechSynthesis.speaking && !window.speechSynthesis.paused) {
+          window.speechSynthesis.pause();
+          readButton.textContent = "▶️ Resume";
+          return;
+        }
+
+        if (window.speechSynthesis.paused) {
+          window.speechSynthesis.resume();
+          readButton.textContent = "⏸ Pause";
+          return;
+        }
+
+        window.speechSynthesis.cancel();
+
+        const utterance = new SpeechSynthesisUtterance(getStoryText());
+        utterance.lang = "en-US";
+        utterance.rate = 0.92;
+        utterance.pitch = 1;
+
+        utterance.onend = resetButton;
+        utterance.onerror = resetButton;
+
+        window.speechSynthesis.speak(utterance);
+        readButton.textContent = "⏸ Pause";
+      });
+
+      stopButton.addEventListener("click", function () {
+        if ("speechSynthesis" in window) {
+          window.speechSynthesis.cancel();
+          resetButton();
+        }
+      });
+
+      window.addEventListener("beforeunload", function () {
+        if ("speechSynthesis" in window) {
+          window.speechSynthesis.cancel();
+        }
+      });
+    }
+  })();
+</script>
+
+</body>
+</html>

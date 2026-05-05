@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Outside Eden | Lofi · Love and Fiction</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:Georgia,'Times New Roman',serif;background:#070912;color:#f5f7ff;line-height:1.7}a{color:inherit;text-decoration:none}
+header{position:sticky;top:0;z-index:50;backdrop-filter:blur(16px);background:rgba(7,9,18,.82);border-bottom:1px solid rgba(255,255,255,.1)}
+.nav{max-width:1180px;margin:0 auto;padding:16px 22px;display:flex;justify-content:space-between;align-items:center;gap:20px;font-family:Arial,sans-serif}.brand{display:flex;align-items:center;gap:12px;letter-spacing:.16em;text-transform:uppercase;font-size:13px;color:#d3ddff}.logo-mark{width:34px;height:34px;border-radius:14px;background:radial-gradient(circle at 44% 34%,#fff,transparent 18%),linear-gradient(135deg,#91adff,#ff9ad5);box-shadow:0 0 24px rgba(145,173,255,.55)}.nav-links{display:flex;flex-wrap:wrap;gap:16px;font-size:13px;color:#dbe4ff}.nav-links a{opacity:.82;transition:.2s}.nav-links a:hover{opacity:1;color:#fff}
+.intro{min-height:52vh;display:grid;align-items:center;max-width:1180px;margin:0 auto;padding:90px 22px 70px}.kicker{font-family:Arial,sans-serif;color:#a9c0ff;text-transform:uppercase;letter-spacing:.32em;font-size:12px;margin-bottom:18px}h1{font-size:clamp(50px,8vw,110px);line-height:.92;letter-spacing:-.07em;margin-bottom:22px}h2{font-size:clamp(34px,5vw,62px);line-height:1;letter-spacing:-.055em;margin-bottom:16px}.intro p{max-width:700px;color:#cbd6ef;font-family:Arial,sans-serif;font-size:18px}
+.quick-index{max-width:1180px;margin:0 auto;padding:0 22px 55px;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px}.index-card{min-height:150px;padding:16px;border-radius:22px;background:rgba(255,255,255,.075);border:1px solid rgba(255,255,255,.14);display:flex;flex-direction:column;justify-content:space-between;transition:.2s;font-family:Arial,sans-serif}.index-card:hover{transform:translateY(-4px);background:rgba(255,255,255,.12)}.index-card span{color:#aecaff;font-size:12px;letter-spacing:.12em;text-transform:uppercase}.index-card strong{display:block;color:#fff;font-size:16px;line-height:1.15;margin-top:8px}.index-card em{color:#c9d4ec;font-size:12px;font-style:normal;margin-top:10px}
+.story-section{position:relative;overflow:hidden;padding:84px 22px}.story-section::before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.95}.story-inner{position:relative;z-index:2;max-width:1180px;margin:0 auto;display:grid;grid-template-columns:.42fr .58fr;gap:34px;align-items:start}.cover-column{position:sticky;top:96px;display:grid;gap:18px}.cover-img{width:100%;display:block;border-radius:30px;border:1px solid rgba(255,255,255,.18);box-shadow:0 28px 80px rgba(0,0,0,.42);background:rgba(255,255,255,.08)}.story-meta{padding:24px;border-radius:26px;background:rgba(7,9,18,.64);border:1px solid rgba(255,255,255,.14);backdrop-filter:blur(12px);font-family:Arial,sans-serif}.story-number{color:#aecaff;font-size:12px;letter-spacing:.18em;text-transform:uppercase;margin-bottom:12px}.story-meta h3{font-family:Georgia,'Times New Roman',serif;font-size:32px;letter-spacing:-.04em;margin-bottom:12px}.story-meta p{color:#d4def4;font-size:14px;margin-bottom:10px}.btn{font-family:Arial,sans-serif;display:inline-flex;align-items:center;justify-content:center;padding:11px 18px;border-radius:999px;border:1px solid rgba(255,255,255,.22);background:rgba(255,255,255,.08);color:#fff;transition:.2s;font-size:14px}.btn:hover{transform:translateY(-2px)}
+.story-panel{padding:38px;border-radius:32px;background:rgba(244,241,232,.96);color:#161a23;box-shadow:0 28px 80px rgba(0,0,0,.36)}.location-ribbon{display:inline-flex;margin-bottom:18px;padding:8px 12px;border-radius:999px;background:#e6e9f3;color:#30384d;font-family:Arial,sans-serif;font-size:13px;font-weight:700}.byline{font-family:Arial,sans-serif;color:#656b7a;margin-bottom:24px}.story-panel p{font-size:18px;color:#222633;margin-bottom:18px}.tech-box{margin:24px 0 30px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.tech-card{padding:17px;border-radius:20px;background:#e6e9f3;border:1px solid #d2d7e8;font-family:Arial,sans-serif}.tech-card h4{color:#151a2a;margin-bottom:7px;font-size:15px}.tech-card p{color:#3d4558;font-size:13px;margin-bottom:0}
+.pride{background:#08111d}.pride::before{background:radial-gradient(circle at 16% 12%,rgba(237,198,122,.2),transparent 28%),radial-gradient(circle at 82% 28%,rgba(113,177,196,.2),transparent 31%),linear-gradient(180deg,#0d1d2b,#111827 48%,#070a11)}.outside{background:#071522}.outside::before{background:radial-gradient(circle at 42% 22%,rgba(140,206,255,.22),transparent 28%),radial-gradient(circle at 78% 48%,rgba(58,107,145,.22),transparent 36%),linear-gradient(180deg,#0b2134,#0d1a27 52%,#050b12)}.shadow{background:#061414}.shadow::before{background:radial-gradient(circle at 18% 18%,rgba(48,126,104,.22),transparent 31%),radial-gradient(circle at 82% 30%,rgba(95,150,160,.16),transparent 30%),linear-gradient(180deg,#0b2725,#0a1818 50%,#050808)}.fawn{background:#211309}.fawn::before{background:radial-gradient(circle at 22% 20%,rgba(255,187,86,.23),transparent 32%),radial-gradient(circle at 82% 28%,rgba(126,61,28,.22),transparent 34%),linear-gradient(180deg,#3a2111,#21140d 50%,#090604)}.man{background:#21180d}.man::before{background:radial-gradient(circle at 20% 20%,rgba(255,207,131,.24),transparent 30%),radial-gradient(circle at 70% 28%,rgba(255,170,201,.18),transparent 32%),linear-gradient(180deg,#2d2114,#1c1612 52%,#0d0a08)}
+
+    .story-figure {
+      margin: 30px 0 34px;
+      border-radius: 26px;
+      overflow: hidden;
+      background: #111827;
+      border: 1px solid rgba(17, 21, 34, 0.12);
+      box-shadow: 0 20px 48px rgba(0,0,0,0.22);
+    }
+
+    .story-figure img {
+      width: 100%;
+      display: block;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+    }
+
+    .story-figure figcaption {
+      padding: 12px 16px 14px;
+      background: rgba(255,255,255,0.72);
+      color: #4f586b;
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+footer{padding:36px 22px 54px;text-align:center;color:#8290ad;font-family:Arial,sans-serif;font-size:13px;background:#070912}
+@media(max-width:980px){.quick-index{grid-template-columns:repeat(2,minmax(0,1fr))}.story-inner{grid-template-columns:1fr}.cover-column{position:static}.cover-img{max-width:620px;margin:0 auto}}@media(max-width:640px){.nav{align-items:flex-start;flex-direction:column}.quick-index,.tech-box{grid-template-columns:1fr}.story-panel{padding:24px}.story-panel p{font-size:16px}}
+</style>
+</head>
+<body>
+<header><nav class="nav"><a href="index.html" class="brand"><span class="logo-mark"></span><span>Lofi · Love and Fiction</span></a><div class="nav-links"><a href="index.html">Home</a><a href="pride.html">Pride</a><a href="outside-eden.html">Outside Eden</a><a href="white-coated-shadow.html">White Shadow</a><a href="false-fawn.html">False Fawn</a><a href="man-no-one-knew.html">Tom & Amy</a></div></nav></header>
+<main>
+<section class="story-section outside" id="outside-eden">
+  <div class="story-inner">
+    <aside class="cover-column">
+      <img class="cover-img" src="assets/outside-eden-cover.jpg" alt="Cover for Outside Eden">
+      <div class="story-meta">
+        <div class="story-number">STORY 02</div>
+        <h3>Outside Eden</h3>
+        <p><strong>Author:</strong> Eli Chen</p>
+        <p><strong>Location:</strong> Salt Lake City, Utah</p>
+        <p><strong>Year:</strong> 2088</p>
+        <p><strong>Mood:</strong> cold blue-gray future city and escape route.</p>
+        <a class="btn" href="index.html#map">Back to Map</a>
+      </div>
+    </aside>
+    <article class="story-panel">
+      <span class="location-ribbon">Salt Lake City, Utah — 2088</span>
+      <h2>Outside Eden</h2>
+      <div class="byline">By Eli Chen</div>
+          <div class="reader-controls">
+            <button class="read-aloud-btn" id="readStoryButton" type="button" aria-label="Read this story aloud">🔊 Read Story</button>
+            <button class="stop-aloud-btn" id="stopStoryButton" type="button" aria-label="Stop reading">⏹ Stop</button>
+          </div>
+          <div class="voice-note">Click the speaker button to listen to this story. Click again to pause or resume.</div>
+
+      
+
+      <p>Clara, an employee in Data Department 0721, found herself unable to muster any enthusiasm for the life she was living. Admittedly, her current life suited her perfectly. In fact, in the Nation of Communia, nearly everyone was satisfied with their lives, for the nation was governed in every aspect by an AI named Winnie—planned production, citizen employment, education, healthcare, and nearly every facet of society&#x27;s operation was managed by Winnie.</p>
+<p>Take Clara&#x27;s own work as an example: during her university years, Winnie had long since conducted an in-depth assessment of Clara&#x27;s interests, aptitudes, and personality traits. Thus, upon her graduation, Winnie matched Clara with the position most suited to her. Indeed, Clara herself was quite satisfied with this arrangement.</p>
+<p>Clara&#x27;s job was to digitize the paper materials stored in the library and upload them to the cloud—after all, to an AI, data was life itself. This day marked the 1,034th day since Clara had begun her work. As she was about to scan a yellowed newspaper from the old era, one that looked entirely different from the other documents in the stack, the headline on the front page made her hand stop mid-motion: &quot;Communia and Oceania Shake Hands in Peace; Oceania Declares AI Polity as Justifiable.&quot;</p>
+          <figure class="story-figure">
+            <img src="assets/outside-archive-discovery.jpg" alt="Clara discovers a forgotten newspaper that opens a path beyond Communia.">
+            <figcaption>Clara discovers a forgotten newspaper that opens a path beyond Communia.</figcaption>
+          </figure>
+
+<p>The timestamp was Year 2054, March 16th. Clara was confused; she had no idea about Oceania, and the present year was 34. Could this newspaper be from over two thousand years in the future? And what was Oceania—why had she never heard of it? Curious, she set down the scanner and began to read the paper closely. She found it rather interesting. Sadly, the other content was only trivial, but this bred Clara’s curiosity.</p>
+<p>Even though she failed to get any meaningful answer from Winnie—Winnie told her that there were no corresponding records—she still managed to get something useful. She managed to seek help from a resourceful friend. Three days later, a message appeared directly in her mind. From it, she learned that Communia was not the only nation in the world. Oceania was another major country, one where every person had the right to freedom and could do whatever they wished.</p>
+<p>In that moment, Clara understood why she had never liked her current life. To every citizen of Communia, Winnie&#x27;s existence was like that of a meddlesome, overbearing guardian, inserting itself into every corner of their lives.</p>
+<p>Clara wanted to know more about Oceania—whether that place where everyone was said to be free truly existed. Could she move to Oceania? But she also realized that all information about Oceania had vanished from Communia&#x27;s databases. This did not make Clara give up; instead, she found it rather interesting, as if she were acting like a detective.</p>
+<p>In Communia, entertainment was a relatively precious experience for the people—in fact, it was a reward for labor. This was because in Communia, a nation of extreme technological advancement and immense productive capacity, all resources had long since become abundantly available. Communia&#x27;s existing output could satisfy every need of every citizen without restriction.</p>
+<p>However, taking certain factors into consideration, Winnie provided each person with resources of a specification deemed appropriate for them. Even so, almost no one ever complained about a shortage of resources. Under these circumstances, in order to incentivize productivity, Winnie distributed the fruits of labor in the form of Credits, which could be exchanged for nearly any form of entertainment.</p>
+<p>But this time, Clara thought this story was more exciting than any experience she had exchanged Credits for from Winnie. Clara managed to shift her approach. Since she could not find any records concerning Oceania, she decided instead to search for any records pertaining to that old newspaper itself.</p>
+<p>Unfortunately, the intake record for this newspaper could no longer be found. Perhaps it was because the newspaper had been here before the library was established, or someone happened to place it here without documentation.</p>
+<p>Clara was at her wit&#x27;s end. In Communia, the truth was that for the vast majority of ordinary citizens, their sole source of information was Winnie itself. With Winnie unable to offer any assistance, she truly had no good options left.</p>
+<p>Just then, a holographic call from Matt solved her most pressing dilemma. Matt was Clara’s boyfriend in college. Their history of love and heartbreak is best left undiscussed. Suffice it to say that in the end, it was Winnie&#x27;s work assignment that had prevented them from ending up together. Back in university, Matt had already displayed exceptional talent, and after graduation he had gone on to work in a special department.</p>
+          <figure class="story-figure">
+            <img src="assets/outside-secret-meeting.jpg" alt="Matt shares the hidden truth of Oceania in a private, dangerous meeting.">
+            <figcaption>Matt shares the hidden truth of Oceania in a private, dangerous meeting.</figcaption>
+          </figure>
+
+<p>After meeting with him, Matt told Clara everything she wanted to know. There were other countries in the world. Oceania remained governed by human rulers. After Communia rose rapidly with the aid of AI, the two nations had once been enemies due to ideological conflict.</p>
+<p>The old powers, led by Oceania, had imposed sanctions and waged war upon Communia. After the Third World War ended in the old calendar year 2034, Oceania&#x27;s military forces were compelled to withdraw from Aria and declare that they would no longer interfere with Communia&#x27;s development.</p>
+<p>Matt also told Clara that it was better not to tell others about this information, or the consequences would be unpredictable. However, when Clara asked how she might travel to Oceania, Matt urged her to abandon the idea. Oceania, he said, was no paradise, and Winnie did not permit ordinary citizens to access information about the outside world. Winnie believed such knowledge would introduce destabilizing elements into society.</p>
+<p>It was only because of his position as a technician that he had the clearance to know such secrets, and even telling her this much had come at considerable personal risk. However, Clara was a stubborn person. Faced with Clara&#x27;s stubborn insistence, Matt seemed to recall something from the past... [1,000 words omitted: a love story].</p>
+<p>Matt promised Clara that he would find a way to fulfill her request, but on the condition that she leave together with him. Clara agreed readily—after all, she still had feelings for Matt. To her, this was a wonderful solution.</p>
+
+          <figure class="story-figure">
+            <img src="assets/outside-journey-border.jpg" alt="Clara and Matt move toward the unknown world beyond AI control.">
+            <figcaption>Clara and Matt move toward the unknown world beyond AI control.</figcaption>
+          </figure>
+<p>Overcoming hardships and difficulties, meeting different friends and witnessing various scenarios on the journey, they made their way to Oceania. Above all, Clara and Matt reached Oceania with a long story. Would the couple have an interesting life in Oceania? This remains to be seen.</p>
+    </article>
+  </div>
+</section>
+</main>
+<footer>Lofi · Love and Fiction · Group 6 Digital Magazine</footer>
+
+<script>
+  (function () {
+    const readButton = document.getElementById("readStoryButton");
+    const stopButton = document.getElementById("stopStoryButton");
+    const storyPanel = document.querySelector(".story-panel");
+
+    function getStoryText() {
+      const title = storyPanel.querySelector("h1")?.innerText || "";
+      const paragraphs = Array.from(storyPanel.querySelectorAll("p"))
+        .filter((p) => !p.closest(".tech-card"))
+        .map((p) => p.innerText.trim())
+        .filter(Boolean)
+        .join("\n\n");
+      return `${title}. ${paragraphs}`;
+    }
+
+    function resetButton() {
+      readButton.textContent = "🔊 Read Story";
+    }
+
+    if (readButton && stopButton && storyPanel) {
+      readButton.addEventListener("click", function () {
+        if (!("speechSynthesis" in window)) {
+          alert("Sorry, this browser does not support text-to-speech.");
+          return;
+        }
+
+        if (window.speechSynthesis.speaking && !window.speechSynthesis.paused) {
+          window.speechSynthesis.pause();
+          readButton.textContent = "▶️ Resume";
+          return;
+        }
+
+        if (window.speechSynthesis.paused) {
+          window.speechSynthesis.resume();
+          readButton.textContent = "⏸ Pause";
+          return;
+        }
+
+        window.speechSynthesis.cancel();
+
+        const utterance = new SpeechSynthesisUtterance(getStoryText());
+        utterance.lang = "en-US";
+        utterance.rate = 0.92;
+        utterance.pitch = 1;
+
+        utterance.onend = resetButton;
+        utterance.onerror = resetButton;
+
+        window.speechSynthesis.speak(utterance);
+        readButton.textContent = "⏸ Pause";
+      });
+
+      stopButton.addEventListener("click", function () {
+        if ("speechSynthesis" in window) {
+          window.speechSynthesis.cancel();
+          resetButton();
+        }
+      });
+
+      window.addEventListener("beforeunload", function () {
+        if ("speechSynthesis" in window) {
+          window.speechSynthesis.cancel();
+        }
+      });
+    }
+  })();
+</script>
+
+</body>
+</html>
